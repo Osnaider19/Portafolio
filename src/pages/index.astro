@@ -1,4 +1,7 @@
 ---
+import Header from '../components/header/Header.astro'
+import '../style/index.css';
+import Main from '../components/main/main.astro'
 ---
 
 <html lang="en">
@@ -7,9 +10,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<script src="https://kit.fontawesome.com/2898a0ac51.js" crossorigin="anonymous"></script>
+		<title>Portafolio personal | Osnaider Martinez</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header></Header>
+        <Main></Main>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	</body>
 </html>
