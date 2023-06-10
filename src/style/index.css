@@ -365,13 +365,20 @@ main{
     list-style: none;
     border: 1px solid #3d3e4f;
     overflow: hidden;
-    width: 325px;
+    width: 350px;
     border-radius: 2px ;
     transition: transform , box-shadow , .3s;
     border-radius: 7px;
     background-color: #25242d;
     z-index: 1;
+    min-height: 494px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
+.li-proyects:nth-child(){
+    min-height: 100%;
 }
 
 .li-proyects::before{
@@ -400,36 +407,33 @@ main{
 .li-proyects img{
     position: relative;
     display: block;
-    height: 170px;
-    width: 325px;
+    height: 190px;
+    width: 350px;
     object-fit: cover;
     user-select: none;
     pointer-events: none;
 }
 .title-proyect{
     color: #f6f6f9;
-    padding: 5px;
+    padding: 10px 10px;
     font-size: 25px;
     font-weight: 700;
-    text-align: center;
 }
 .title-proyect::first-letter{
     text-transform: capitalize;
 }
 
 .title-technologies{
-    text-align: center;
     color: #6C7A84;
     font-size: 20px;
     padding: 5px 10px;
 
 }
 .description-proyect{
-  padding: 10px 10px;
+  padding: 5px 10px;
   color:#6C7A84; 
   font-size: 17px;
   font-weight: 400;
-  text-align: center;
 }
 .description-proyect::first-letter{
     text-transform: capitalize;
@@ -442,7 +446,7 @@ main{
 .container-technologies{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: 10px 10px;
     gap: 20px;
     
@@ -451,6 +455,7 @@ main{
     position: relative;
     width: 100%;
     padding: 20px 10px;
+    
 }
 
 .container-link-proyect a{
@@ -464,6 +469,47 @@ main{
 
 .section-footer{
     position: relative;
-    height: 30vh;
     width: 100%;
+}
+.container-footer{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.title-contact{
+    color: #f6f6f9;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.container-redes{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.container-redes a{
+    text-decoration: none;
+    color: #f6f6f9; 
+}
+.li-contact{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.li-contact i{
+    font-size: 30px;
+}
+.container-copy{
+    position: relative;
+    color: #f6f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
 }
