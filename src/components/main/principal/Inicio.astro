@@ -6,7 +6,34 @@ import photoperfil from "../../../img/photo-perfil.png";
   <div class="container-text">
     <h2 class="text-hello">Hola <strong>soy</strong></h2>
     <h2 class="text-name">Osnaider Martinez</h2>
-    <p class="p-profession">Desarrollador Front-end Jr</p>
+    <p class="container-profetion">
+      <span class="p-profesion">D</span>
+      <span class="p-profesion">e</span>
+      <span class="p-profesion">s</span>
+      <span class="p-profesion">a</span>
+      <span class="p-profesion">r</span>
+      <span class="p-profesion">r</span>
+      <span class="p-profesion">o</span>
+      <span class="p-profesion">l</span>
+      <span class="p-profesion">l</span>
+      <span class="p-profesion">a</span>
+      <span class="p-profesion">d</span>
+      <span class="p-profesion">o</span>
+      <span class="p-profesion">r</span>
+      <span class="">&nbsp;</span>
+      <span class="p-profesion">F</span>
+      <span class="p-profesion">r</span>
+      <span class="p-profesion">o</span>
+      <span class="p-profesion">n</span>
+      <span class="p-profesion">t</span>
+      <span class="p-profesion">-</span>
+      <span class="p-profesion">e</span>
+      <span class="p-profesion">n</span>
+      <span class="p-profesion">d</span>
+      <span class="">&nbsp;</span>
+      <span class="p-profesion">J</span>
+      <span class="p-profesion">r</span>
+    </p>
     <p class="p-presentation">
       Soy un apasionado de la tecnología y me encanta crear experiencias web
       únicas. A lo largo de mi carrera, he trabajado en proyectos desafiantes,
@@ -14,7 +41,9 @@ import photoperfil from "../../../img/photo-perfil.png";
       sitios web receptivos, intuitivos y visualmente atractivos.
     </p>
     <div class="container-curriculum">
-      <a href="https://wa.me/+573166026155" target="_blank" class="a-hablemos">Hablemos</a>
+      <a href="https://wa.me/+573166026155" target="_blank" class="a-hablemos"
+        >Hablemos</a
+      >
       <a href="" class="a-curriculum">Ver Currículum</a>
     </div>
     <div class="container-social">
@@ -24,7 +53,10 @@ import photoperfil from "../../../img/photo-perfil.png";
           <i class="fa-brands fa-github"></i>
         </li>
       </a>
-      <a href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/"
+        target="_blank"
+      >
         <li class="li-social">
           <i class="fa-brands fa-linkedin"></i>
         </li>
@@ -33,9 +65,25 @@ import photoperfil from "../../../img/photo-perfil.png";
   </div>
   <div class="container-photo-profile">
     <div class="photo-perfil">
-        <picture>
-          <img src={photoperfil} alt="Osnaider Martinez" />
-        </picture>
+      <picture>
+        <img src={photoperfil} alt="Osnaider Martinez" />
+      </picture>
     </div>
   </div>
 </dir>
+
+<script>
+  const letters = document.querySelectorAll(".p-profesion");
+  letters.forEach((letter) => {
+    letter.addEventListener("mouseenter", () => {
+      toogle(letter);
+    });
+  });
+
+  function toogle(letter) {
+    letter.classList.add("bouncing");
+    letter.addEventListener("animationend", () => {
+      letter.classList.remove("bouncing");
+    });
+  }
+</script>

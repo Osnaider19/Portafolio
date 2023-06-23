@@ -7,6 +7,7 @@
 }
 html{
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 :root{
     --text : 'Lato', sans-serif;
@@ -109,18 +110,51 @@ main{
     font-weight:800;
     letter-spacing: 1px;
 }
-
-.p-profession{
-    padding: 9px 0;
-    font-size: 30px;
+.container-profetion{
+    cursor: pointer;
+    padding: 5px 0;
+}
+.p-profesion{
+    font-size: 35px;
     font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bouncing{
+    transition: .8s all;
+    color: #01BE96;
+    animation: rubberband 400ms  alternate ease-out;
+}
+
+@keyframes rubberband {
+    10%{
+        transform: scaleX(1);
+    }
+    40%{
+        transform: scaleX(1.12) scaleY(0.75);
+    }
+    55%{
+       transform: scaleX(0.85) scaleY(1); 
+    }
+    75%{
+       transform: scaleX(0.9) scaleY(1);
+    }
+    90%{
+      transform: scaleX(1.85) scaleY(0.95);
+    }
+    100%{
+       transform: scaleX(1) scaleY(1);
+    }
 }
 .p-presentation{
     padding: 12px 0;
     font-size: 19px;
     width: 90%;
     text-align:  left;
+    
 }
+
 .container-curriculum{
     position: relative;
     padding: 40px 0;
@@ -256,6 +290,7 @@ main{
     color: #f6f6f9;
     width: 100%;    
     font-weight: 800;
+    scroll-margin-top: 80px;
 }
 .container-text-sobremi p{
     font-size: 17px;
@@ -292,6 +327,7 @@ main{
     color: #f6f6f9;
     width: 100%;    
     font-weight: 800;
+    scroll-margin-top: 80px;
 }
 
 .ul-skill{
@@ -356,6 +392,7 @@ main{
     color: #f6f6f9;
     width: 100%;    
     font-weight: 800;
+    scroll-margin-top: 80px;
 }
 
 .ul-proyects{
@@ -494,6 +531,7 @@ main{
     padding: 10px 0;
     font-size: 25px;
     font-weight: 700;
+    scroll-margin-top: 80px;        
 }
 .container-redes{
     position: relative;
@@ -534,6 +572,8 @@ main{
 
 
 
+
+
 /*Responsivo*/
 
 
@@ -566,7 +606,6 @@ main{
     .container-bnt-menu{
         position: relative;
         padding: 0px 20px;
-        
     }
     .linea-menu{
         display: block;
