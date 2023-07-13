@@ -1,5 +1,7 @@
 ---
-import imgproyectos from "../../../img/cyberpunk.jpg";
+import cyberpunk from "../../../img/cyberpunk.webp";
+import movie from "../../../img/movie.jpg";
+import IconTailwind from "../habilidades/IconTailwind.astro";
 ---
 
 <section class="section-proyects">
@@ -8,7 +10,7 @@ import imgproyectos from "../../../img/cyberpunk.jpg";
     <div>
       <ul class="ul-proyects">
         <li class="li-proyects">
-          <img src={imgproyectos} alt="Cyberpunk" />
+          <img src={cyberpunk} alt="Cyberpunk" />
           <p class="title-proyect">cyberpunk</p>
           <p class="description-proyect">
             este proyecto se trata de un clon de la pagína de cyberpunk , donde
@@ -30,45 +32,30 @@ import imgproyectos from "../../../img/cyberpunk.jpg";
         </li>
 
         <li class="li-proyects">
-          <img
-            src="https://i0.wp.com/blogpascher.com/wp-content/uploads/2018/09/62222-big.jpg?fit=900%2C560&ssl=1"
-            alt=""
-          />
-          <p class="title-proyect">cyberpunk</p>
+          <img src={movie} alt="" />
+          <p class="title-proyect">Movie Tv</p>
           <p class="description-proyect">
-            este proyecto se trata de un clon de la pagína de cyberpunk
+            simulando una página de películas , consumiendo la API de themovietv
+            donde los usuarios pueden buscar películas y ver trailer.....
           </p>
           <p class="title-technologies">tecnologías usadas</p>
           <div class="container-technologies">
-            <i class="fa-brands fa-html5 icon-skills skill-html"></i>
+            <i class="fa-brands fa-react icon-skills skill-react"></i>
             <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
+            <IconTailwind />
             <i class="fa-brands fa-js icon-skills skill-javascript"></i>
+            <i class=""></i>
           </div>
           <div class="container-link-proyect">
-            <a href="">Ver más</a>
-          </div>
-        </li>
-
-        <li class="li-proyects">
-          <img
-            src="https://i0.wp.com/www.webtralia.com/wp-content/uploads/2019/07/Templates-HTML5-Music-Band-Responsive-Website-Template.jpg?fit=590%2C300&ssl=1"
-            alt=""
-          />
-          <p class="title-proyect">cyberpunk</p>
-          <p class="description-proyect">
-            este proyecto se trata de un clon de la pagína de cyberpunk
-          </p>
-          <p class="title-technologies">tecnologías usadas</p>
-          <div class="container-technologies">
-            <i class="fa-brands fa-html5 icon-skills skill-html"></i>
-            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
-            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
-          </div>
-          <div class="container-link-proyect">
-            <a href="">Ver más</a>
+            <a href="https://movietvsite.netlify.app/" target="_blank"
+              >Ver más</a
+            >
           </div>
         </li>
       </ul>
     </div>
   </div>
 </section>
+
+
+

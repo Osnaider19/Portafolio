@@ -115,10 +115,11 @@ main{
     padding: 5px 0;
 }
 .p-profesion{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     cursor: pointer;
     display: inline-block;
+    text-transform: capitalize;
 }
 
 .bouncing{
@@ -272,6 +273,7 @@ main{
     width: 90%;
     display: flex;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .container-text-sobremi{
@@ -356,6 +358,9 @@ main{
 .skill-html{
     color: #D84924;
 }
+.skill-react{
+    color: #1399C4;
+}
 .skill-css{
     color: #254BDD;
 }
@@ -398,11 +403,11 @@ main{
 .ul-proyects{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     padding: 40px 0;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 150px;
 }
 .ul-proyects a{
   text-decoration: none;
@@ -413,13 +418,13 @@ main{
     list-style: none;
     border: 1px solid #3d3e4f;
     overflow: hidden;
-    width: 350px;
+    width: 400px;
     border-radius: 2px ;
     transition: transform , box-shadow , .3s;
     border-radius: 7px;
     background-color: #25242d;
     z-index: 1;
-    min-height: 494px;
+    min-height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -455,9 +460,10 @@ main{
 .li-proyects img{
     position: relative;
     display: block;
-    height: 190px;
-    width: 350px;
+    height: 200px;
+    width: 100%;
     object-fit: cover;
+    object-position: left top;
     user-select: none;
     pointer-events: none;
 }
@@ -725,9 +731,9 @@ main{
 
    .ul-skill{
     justify-content: space-evenly;
-    gap: 10px;
+    
    }
-
+   
 
    /*Responsivo de la seccion de proyectos*/
    
@@ -737,17 +743,13 @@ main{
     padding: 0px 20px;
    }
    .ul-proyects{
-    gap: 10px;
-    align-items: start;
+    
+    align-items: center;
     width: 100%;
+    justify-content: center;
     
    }
-   .li-proyects img {
-     width: 300px;
-   }
-   .li-proyects{
-    width: 300px;
-   }
+   
 }
 
 
