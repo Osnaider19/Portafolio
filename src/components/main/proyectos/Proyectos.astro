@@ -1,6 +1,8 @@
 ---
 import cyberpunk from "../../../img/cyberpunk.webp";
-import movie from "../../../img/movie.jpg";
+import movie from "../../../img/movie.webp";
+import landing from "../../../img/landing.webp";
+import IconAstro from "../habilidades/IconAstro.astro";
 import IconTailwind from "../habilidades/IconTailwind.astro";
 ---
 
@@ -52,10 +54,26 @@ import IconTailwind from "../habilidades/IconTailwind.astro";
             >
           </div>
         </li>
+        <li class="li-proyects">
+          <img src={landing} alt="" />
+          <p class="title-proyect">Landing Realidad Virtual</p>
+          <p class="description-proyect">
+            landing page de gafas de realidad virtual donde se muestra el producto y como funciona 
+          </p>
+          <p class="title-technologies">tecnologías usadas</p>
+          <div class="container-technologies">
+            <IconAstro />
+            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
+            <IconTailwind />
+            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
+          </div>
+          <div class="container-link-proyect">
+            <a href="https://realityvirtual.netlify.app/" target="_blank"
+              >Ver más</a
+            >
+          </div>
+        </li>
       </ul>
     </div>
   </div>
 </section>
-
-
-

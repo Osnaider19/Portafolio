@@ -52,9 +52,9 @@ html::-webkit-scrollbar-thumb{
     position: relative;
     display: flex;
 }
-.ul-nav a{
+.li-nav  a{
     text-decoration: none;
-   
+    color: #f6f6f9;
 }
 .li-nav{
     position: relative;
@@ -407,7 +407,8 @@ main{
     align-items: start;
     padding: 40px 0;
     flex-wrap: wrap;
-    gap: 150px;
+    gap: 50px;
+    justify-content: space-between;
 }
 .ul-proyects a{
   text-decoration: none;
@@ -418,7 +419,7 @@ main{
     list-style: none;
     border: 1px solid #3d3e4f;
     overflow: hidden;
-    width: 400px;
+    width: 350px;
     border-radius: 2px ;
     transition: transform , box-shadow , .3s;
     border-radius: 7px;
@@ -478,14 +479,14 @@ main{
 }
 
 .title-technologies{
-    color: #6C7A84;
+    color: #f6f6f9;
     font-size: 20px;
     padding: 5px 10px;
 
 }
 .description-proyect{
   padding: 5px 10px;
-  color:#6C7A84; 
+  color:#f6f6f990; 
   font-size: 17px;
   font-weight: 400;
 }
@@ -612,6 +613,7 @@ main{
     .container-bnt-menu{
         position: relative;
         padding: 0px 20px;
+        z-index: 9999;
     }
     .linea-menu{
         display: block;
@@ -648,9 +650,7 @@ main{
         transition: right .4s ease-in-out;
         z-index: 100;
     }
-    .ul-nav a{
-        
-    }
+    
     .li-nav{
         padding: 30px 80px;
         text-align: center;
