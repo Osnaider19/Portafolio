@@ -52,7 +52,7 @@ html::-webkit-scrollbar-thumb{
     position: relative;
     display: flex;
 }
-.li-nav  a{
+.ul-nav  a{
     text-decoration: none;
     color: #f6f6f9;
 }
@@ -577,6 +577,10 @@ main{
     display: none;
 }
 
+.menu-drop{
+    display: none;
+}
+
 
 
 
@@ -688,7 +692,7 @@ main{
     }
     .ul-nav{
         flex-direction: column  ; 
-        width: auto;
+        width: 100%;
     }
    .container-persentation{
     flex-direction: column-reverse;
@@ -770,4 +774,14 @@ main{
     .li-proyects{
         width: 400px;
     }
+}
+
+
+@media (max-width:500px) {
+    .container-curriculum{
+        display: flex;
+        gap: 10px;
+    }
+
+    
 }
