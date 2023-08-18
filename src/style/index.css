@@ -403,12 +403,11 @@ main{
 .ul-proyects{
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: start;
     padding: 40px 0;
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: space-between;
 }
 .ul-proyects a{
   text-decoration: none;
@@ -429,6 +428,7 @@ main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    
 }
 
 .li-proyects:nth-child(){
