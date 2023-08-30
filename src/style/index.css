@@ -338,8 +338,9 @@ main{
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
     padding: 40px 0;
+    width: 100%;
 }
 
 .li-skills{
