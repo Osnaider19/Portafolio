@@ -1,11 +1,6 @@
 ---
-import cyberpunk from "../../../img/cyberpunk.webp";
-import movie from "../../../img/movie.webp";
-import landing from "../../../img/landing.webp";
-import IconAstro from "../habilidades/IconAstro.astro";
-import IconTailwind from "../habilidades/IconTailwind.astro";
-import fitnation from "../../../img/fit-nation.webp";
-import storegames from "../../../img/store-games.webp";
+import { proyectos } from "../../../proyectos/data.js";
+import Proycto from "./Proycto.astro";
 ---
 
 <section class="section-proyects">
@@ -13,111 +8,17 @@ import storegames from "../../../img/store-games.webp";
     <h2 class="title-proyects" id="proyectos">Proyectos</h2>
     <div>
       <ul class="ul-proyects">
-        <li class="li-proyects">
-          <img src={cyberpunk} alt="Cyberpunk" />
-          <p class="title-proyect">cyberpunk</p>
-          <p class="description-proyect">
-            este proyecto se trata de un clon de la pagína de cyberpunk , donde
-            el ususario puede ver los tailer de él juegos y también los
-            episodios de la serie....
-          </p>
-          <p class="title-technologies">tecnologías usadas</p>
-          <div class="container-technologies">
-            <i class="fa-brands fa-html5 icon-skills skill-html"></i>
-            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
-            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
-          </div>
-          <div class="container-link-proyect">
-            <a
-              href="https://preeminent-liger-266356.netlify.app/"
-              target="_blank">Ver más</a
-            >
-          </div>
-        </li>
-
-        <li class="li-proyects">
-          <img src={movie} alt="" />
-          <p class="title-proyect">Movie Tv</p>
-          <p class="description-proyect">
-            simulando una página de películas , consumiendo la API de themovietv
-            donde los usuarios pueden buscar películas y ver trailer.....
-          </p>
-          <p class="title-technologies">tecnologías usadas</p>
-          <div class="container-technologies">
-            <i class="fa-brands fa-react icon-skills skill-react"></i>
-            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
-            <IconTailwind />
-            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
-            <i class=""></i>
-          </div>
-          <div class="container-link-proyect">
-            <a href="https://movietvsite.netlify.app/" target="_blank"
-              >Ver más</a
-            >
-          </div>
-        </li>
-
-        <li class="li-proyects">
-          <img src={landing} alt="" />
-          <p class="title-proyect">Landing Realidad Virtual</p>
-          <p class="description-proyect">
-            landing page de gafas de realidad virtual donde se muestra el
-            producto y como funciona
-          </p>
-          <p class="title-technologies">tecnologías usadas</p>
-          <div class="container-technologies">
-            <IconAstro />
-            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
-            <IconTailwind />
-            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
-          </div>
-          <div class="container-link-proyect">
-            <a href="https://realityvirtual.netlify.app/" target="_blank"
-              >Ver más</a
-            >
-          </div>
-        </li>
-        <li class="li-proyects">
-          <img src={fitnation} alt="" />
-          <p class="title-proyect">Gym</p>
-          <p class="description-proyect">
-            landing page de una gym por ahora es una landing todavia está en
-            desarrollo la idea es que los usuarios puedan comprar productos de
-            el gym
-          </p>
-          <p class="title-technologies">tecnologías usadas</p>
-          <div class="container-technologies">
-            <i class="fa-brands fa-react icon-skills skill-react"></i>
-            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
-            <IconTailwind />
-            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
-          </div>
-          <div class="container-link-proyect">
-            <a href="https://fitnation.netlify.app/" target="_blank">Ver más</a>
-          </div>
-        </li>
-
-        <li class="li-proyects">
-          <img src={storegames} alt="" />
-          <p class="title-proyect">Store games</p>
-          <p class="description-proyect">
-            Simulando una página de juegos , consumiendo la API de rawg api
-            donde los usuarios pueden buscar videojuegos, ver sus detalles como
-            creadores , calificaciones,tiendas donde comprar.....
-          </p>
-          <p class="title-technologies">tecnologías usadas</p>
-          <div class="container-technologies">
-            <i class="fa-brands fa-react icon-skills skill-react"></i>
-            <i class="fa-brands fa-css3-alt icon-skills skill-css"></i>
-            <IconTailwind />
-            <i class="fa-brands fa-js icon-skills skill-javascript"></i>
-          </div>
-          <div class="container-link-proyect">
-            <a href="https://store-games-site.netlify.app/" target="_blank"
-              >Ver más</a
-            >
-          </div>
-        </li>
+        {
+          proyectos.map(({ description, img, link, technologies, title }) => (
+            <Proycto
+              img={img}
+              description={description}
+              link={link}
+              title={title}
+              technologies={technologies}
+            />
+          ))
+        }
       </ul>
     </div>
   </div>

@@ -1,0 +1,50 @@
+---
+import IconAstro from "../habilidades/IconAstro.astro";
+import IconRadix from "../habilidades/IconRadix.astro";
+import IconRedux from "../habilidades/IconRedux.astro";
+import IconTailwind from "../habilidades/IconTailwind.astro";
+
+type Technology = {
+  icono?: string | null;
+  class?: string | null;
+};
+export interface Props {
+  title: string;
+  img: string;
+  description: string;
+  technologies?: Technology[];
+  link: string;
+}
+
+const { technologies, title, img, description, link } = Astro.props;
+---
+
+<li class="li-proyects">
+  <img src={img} alt={title} />
+  <p class="title-proyect">{title}</p>
+  <p class="description-proyect">
+    {description}
+  </p>
+  <p class="title-technologies">tecnologías usadas</p>
+  <div class="container-technologies">
+    {
+      technologies.map((technologi) => {
+        function ValidarIcono(icono: string) {
+          if (icono === "tailwindcss")return <IconTailwind />;
+          if (icono === "Astro") return <IconAstro />;
+          if (icono === "Redux") return <IconRedux />;
+          if (icono === "Radix") return <IconRadix />;
+          return;
+        }
+        return (
+          <i class={`${technologi?.class ? technologi?.class : ""}`}>
+            {ValidarIcono(technologi?.icono)}
+          </i>
+        );
+      })
+    }
+  </div>
+  <div class="container-link-proyect">
+    <a href={link} target="_blank">Ver más</a>
+  </div>
+</li>

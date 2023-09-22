@@ -349,7 +349,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .icon-skills{
@@ -504,7 +504,9 @@ main{
     display: flex;
     justify-content: start;
     padding: 10px 10px;
-    gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    color: white;
     
 }
 .container-link-proyect{
