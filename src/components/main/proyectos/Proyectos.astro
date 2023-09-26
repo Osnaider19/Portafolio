@@ -4,6 +4,7 @@ import Proycto from "./Proycto.astro";
 ---
 
 <section class="section-proyects">
+  <div class="linear-grandient-1"></div>
   <div class="container-proyects">
     <h2 class="title-proyects" id="proyectos">Proyectos</h2>
     <div>
@@ -23,3 +24,16 @@ import Proycto from "./Proycto.astro";
     </div>
   </div>
 </section>
+
+<style>
+  
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, transparent, transparent , rgba(1, 190, 150, 0.5) );
+    z-index: 0;
+  }
+</style>

@@ -113,7 +113,7 @@ export const proyectos = [
     img: "../../../img/spotify.webp",
     title: "Spotify-Clone",
     link: "https://spotify-app-react.vercel.app/",
-    description: `spotify con su api donde te puedes connectar a tu cuenta de spotify ver tus listas de reproducción ver playList en tendencias y Albums etc.... aun en desarrollo`,
+    description: `spotify con su api donde te puedes connectar a tu cuenta de spotify ver tus listas de reproducción ver playList en tendencias y Albums etc.... aún en desarrollo`,
     technologies: [
       {
         class: "fa-brands fa-react icon-skills skill-react",

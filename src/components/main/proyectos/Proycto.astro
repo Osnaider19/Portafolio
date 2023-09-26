@@ -17,6 +17,13 @@ export interface Props {
 }
 
 const { technologies, title, img, description, link } = Astro.props;
+
+enum TYPESICONS {
+  Tailwindcss = "Tailwindcss",
+  Astro = "Astro",
+  Redux ="Redux",
+  Radix = "Radix",
+}
 ---
 
 <li class="li-proyects">
@@ -29,11 +36,11 @@ const { technologies, title, img, description, link } = Astro.props;
   <div class="container-technologies">
     {
       technologies.map((technologi) => {
-        function ValidarIcono(icono: string) {
-          if (icono === "tailwindcss")return <IconTailwind />;
-          if (icono === "Astro") return <IconAstro />;
-          if (icono === "Redux") return <IconRedux />;
-          if (icono === "Radix") return <IconRadix />;
+        function ValidarIcono(icono : string) {
+          if (icono === TYPESICONS.Tailwindcss)return <IconTailwind />;
+          if (icono === TYPESICONS.Astro) return <IconAstro />;
+          if (icono === TYPESICONS.Redux) return <IconRedux />;
+          if (icono === TYPESICONS.Radix) return <IconRadix />;
           return;
         }
         return (

@@ -11,10 +11,14 @@ html{
 }
 :root{
     --text : 'Lato', sans-serif;
+    --width : 0;
+    --height : 0;
+    --top : 20px;
+    --left : 784px;
 }
 body{
   font-family: 'ABeeZee', sans-serif;
-  background-color: #25242d;
+  background-color: #000;
   
 }
 html::-webkit-scrollbar{
@@ -25,13 +29,14 @@ html::-webkit-scrollbar-thumb{
     background-color: #01BE96;
     border-radius: 20px;
     width: 10px;
+   
 }
 
 
 .header{
     position: relative;
     height: 80px;
-    background-color: #25242d;
+    background-color: #000;
     width: 100%;
     padding: 20px 20px;
     color: #f6f6f9;
@@ -40,6 +45,8 @@ html::-webkit-scrollbar-thumb{
 }
 .header h1{
     display: inline-block;
+    position: relative;
+    z-index: 20;
 }
 .nav{
     position: relative;
@@ -52,6 +59,8 @@ html::-webkit-scrollbar-thumb{
     position: relative;
     display: flex;
 }
+
+
 .ul-nav  a{
     text-decoration: none;
     color: #f6f6f9;
@@ -62,8 +71,9 @@ html::-webkit-scrollbar-thumb{
     margin: 10px 13px;
     color: #f6f6f9;
     transition: .3s;
+    padding: 10px ;
 }
-.li-nav::before{
+/* .li-nav::before{
     content: '';
     position: absolute;
     height: 2px ;
@@ -78,10 +88,24 @@ html::-webkit-scrollbar-thumb{
 }
 .li-nav:hover{
     opacity: .8;
+} */
+.effect-items-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--width);
+    height: var(--height);
+    transition: all .3s ease-in-out;
+    transform: translateX(var(--left)) translateY(var(--top));
+    background-color: #25242d;
+    z-index: 0;
+    border-radius: 3px;
+    visibility: visible;
 }
 
 main{
     position: relative;
+    background-color: #000;
     
 }
 .container-persentation{
@@ -92,6 +116,7 @@ main{
     padding: 50px 0;
     width: 90%;
     margin: 0 auto;
+    
 }
 .container-text{
     position: relative;
@@ -236,37 +261,35 @@ main{
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #01BE96;
+  
     overflow: hidden;
     height: 350px;
     width: 350px;
     margin-top: 30px;
     margin-left: 110px;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 5px rgba(1, 190, 150 , .3);
     z-index: 10;
-    border-radius: 64% 36% 29% 71% / 59% 79% 21% 41%;
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.1);
+    /* border-radius: 64% 36% 29% 71% / 59% 79% 21% 41%; */
 }
 
 .photo-perfil img{
     position: relative;
     display: block;
-    top: 10px;
-    left: 5px;
-    height: 350px;
     object-fit: cover;
-    filter: drop-shadow(10px -5px 10px #000) contrast(110%);
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(-10px -5px 10px #000) contrast(110%);
     transition: .3s;
-}
-
-.photo-perfil img:hover{
-    transform: translateY(-10px);
 }
 
 /* seccion sobre mi*/
 .section-sobremi{
     position: relative;
-    background-color: #3d3e4f;
+    background-color: #111111;
 }
 .container-sobremi{
     position: relative;
@@ -320,6 +343,7 @@ main{
     padding: 10px 0;
     margin: 0 auto;
     padding: 10px 0;
+    
 }
 .title-skills{
     position: relative;
@@ -359,6 +383,7 @@ main{
 .skill-html{
     color: #D84924;
 }
+
 .skill-react{
     color: #1399C4;
 }
@@ -382,7 +407,7 @@ main{
 
 .section-proyects{
     position: relative;
-    background-color: #3d3e4f;
+    background-color: #111111;
 }
 
 .container-proyects{
@@ -529,6 +554,7 @@ main{
 .section-footer{
     position: relative;
     width: 100%;
+    background-color: #111111;
 }
 .container-footer{
     position: relative;

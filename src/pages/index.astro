@@ -1,24 +1,33 @@
 ---
-import Header from '../components/header/Header.astro'
-import '../style/index.css';
-import Main from '../components/main/main.astro'
-import Footer from '../components/footer/Footer.astro';
+import Header from "../components/header/Header.astro";
+import "../style/index.css";
+import Main from "../components/main/main.astro";
+import Footer from "../components/footer/Footer.astro";
 ---
 
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Osnaider Martinez de desarrollador web Frontend React js , Astro ">
-		<script src="https://kit.fontawesome.com/2898a0ac51.js" crossorigin="anonymous"></script>
-		<title>Portafolio | Osnaider Martinez</title>
-	</head>
-	<body>
-		<Header></Header>
-        <Main></Main>
-		<Footer></Footer>
-		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Osnaider Martinez de desarrollador web Frontend React Js , Astro , Next Js"
+    />
+    <script
+      src="https://kit.fontawesome.com/2898a0ac51.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portafolio | Osnaider Martinez</title>
+  </head>
+  <body>
+    <Header />
+    <Main />
+    <Footer />
+
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+  </body>
 </html>
