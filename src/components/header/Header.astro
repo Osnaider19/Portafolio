@@ -1,6 +1,6 @@
 <header class="header">
   <h1 id="inicio">Portafolio</h1>
-  <div class="effect-items-menu" id="menu-hover"></div>
+  <!-- <div class="effect-items-menu" id="menu-hover"></div> -->
   <nav class="nav">
     <ul class="ul-nav">
       <a href="#inicio">
@@ -59,26 +59,26 @@
   </script>
 
   <script>
-    const menuHover = document.querySelector("#menu-hover");
-    const listItems = document.querySelectorAll(".li-nav");
-    listItems.forEach((item) => {
-      const { top, left, width, height } = item.getBoundingClientRect();
-      item.addEventListener("mouseenter", () => {
-        menuHover.style.setProperty("--height", `${height}px`);
-        menuHover.style.setProperty("--width", `${width}px`);
-        menuHover.style.setProperty("--top", `${top}px`);
-        menuHover.style.setProperty("--left", `${left}px`);
+    // const menuHover = document.querySelector("#menu-hover");
+    // const listItems = document.querySelectorAll(".li-nav");
+    // listItems.forEach((item) => {
+    //   const { top, left, width, height } = item.getBoundingClientRect();
+    //   item.addEventListener("mouseenter", () => {
+    //     menuHover.style.setProperty("--height", `${height}px`);
+    //     menuHover.style.setProperty("--width", `${width}px`);
+    //     menuHover.style.setProperty("--top", `${top}px`);
+    //     menuHover.style.setProperty("--left", `${left}px`);
 
-        menuHover.style.visibility = "visible";
-        menuHover.style.opacity = 1;
-      });
-    });
+    //     menuHover.style.visibility = "visible";
+    //     menuHover.style.opacity = 1;
+    //   });
+    // });
 
-    listItems.forEach((item) => {
-      item.addEventListener("mouseleave", () => {
-        menuHover.style.visibility = "hidden";
-        menuHover.style.opacity = 0;
-      });
-    });
+    // listItems.forEach((item) => {
+    //   item.addEventListener("mouseleave", () => {
+    //     menuHover.style.visibility = "hidden";
+    //     menuHover.style.opacity = 0;
+    //   });
+    // });
   </script>
 </header>

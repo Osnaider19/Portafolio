@@ -132,10 +132,7 @@ export const proyectos = [
         class: null,
         icono: "Redux",
       },
-      {
-        class: null,
-        icono: "Radix",
-      },
+      
     ],
   },
 ];

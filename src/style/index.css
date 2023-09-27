@@ -73,25 +73,26 @@ html::-webkit-scrollbar-thumb{
     list-style: none;
     color: #f6f6f9;
     transition: .3s;
-    padding: 10px;
+    margin: 0 10px;
+    padding: 1px ;
     text-align: center;
 }
-/* .li-nav::before{
+ .li-nav::before{
     content: '';
     position: absolute;
     height: 2px ;
     width:0%;
-    background-color: #f6f6f9;
-    bottom: -1px;
-    opacity: .7;
+    background-color: #01BE96;
+    bottom: -3px;
+    
 }
 .li-nav:hover::before{
     width: 100%;
     transition: .4s;
 }
 .li-nav:hover{
-    opacity: .8;
-} */
+    color: #01BE96;
+} 
 .effect-items-menu {
     position: absolute;
     left: 0;
@@ -137,6 +138,7 @@ main{
     color: #01BE96;
     font-weight:800;
     letter-spacing: 1px;
+    margin-top: 30px;
 }
 .container-profetion{
     cursor: pointer;
@@ -148,6 +150,7 @@ main{
     cursor: pointer;
     display: inline-block;
     text-transform: capitalize;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 .bouncing{
@@ -473,6 +476,7 @@ main{
     z-index: -1;
     bottom: 0;
     transition: .3s ease-in-out;
+    pointer-events: none;
 }
 
 .li-proyects:hover::before{
@@ -483,9 +487,11 @@ main{
     z-index: -1;
     bottom: 0;
     transition: .3s ease-in-out;
+    pointer-events: none;
 }
 .li-proyects:hover{
     transform: translateY(-10px);
+    
 }
 .li-proyects img{
     position: relative;
@@ -514,10 +520,15 @@ main{
 
 }
 .description-proyect{
-  padding: 5px 10px;
+  padding: 0 10px;
   color:#f6f6f990; 
   font-size: 17px;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
 }
 .description-proyect::first-letter{
     text-transform: capitalize;
@@ -590,9 +601,14 @@ main{
     display: flex;
     gap: 10px;
     align-items: center;
+    transition: color .2s ease-in-out;
 }
 .li-contact i{
     font-size: 30px;
+}
+
+.li-contact:hover{
+color: #01BE96;
 }
 .container-copy{
     position: relative;
