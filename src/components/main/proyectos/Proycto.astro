@@ -1,6 +1,7 @@
 ---
 import IconAstro from "../habilidades/IconAstro.astro";
 import IconRadix from "../habilidades/IconRadix.astro";
+import IconReactQuery from "../habilidades/IconReactQuery.astro";
 import IconRedux from "../habilidades/IconRedux.astro";
 import IconTailwind from "../habilidades/IconTailwind.astro";
 
@@ -23,6 +24,7 @@ enum TYPESICONS {
   Astro = "Astro",
   Redux ="Redux",
   Radix = "Radix",
+  ReactQuery = "ReactQuery"
 }
 ---
 
@@ -41,6 +43,7 @@ enum TYPESICONS {
           if (icono === TYPESICONS.Astro) return <IconAstro />;
           if (icono === TYPESICONS.Redux) return <IconRedux />;
           if (icono === TYPESICONS.Radix) return <IconRadix />;
+          if (icono === TYPESICONS.ReactQuery) return <IconReactQuery />;
           return;
         }
         return (

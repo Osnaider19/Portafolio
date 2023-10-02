@@ -37,7 +37,11 @@ export const proyectos = [
       },
       {
         class: null,
-        icono: "tailwindcss",
+        icono: "Tailwindcss",
+      },
+      {
+        class: null,
+        icono: "ReactQuery",
       },
     ],
   },
@@ -59,7 +63,7 @@ export const proyectos = [
       },
       {
         class: null,
-        icono: "tailwindcss",
+        icono: "Tailwindcss",
       },
     ],
   },
@@ -82,7 +86,7 @@ export const proyectos = [
       },
       {
         class: null,
-        icono: "tailwindcss",
+        icono: "Tailwindcss",
       },
     ],
   },
@@ -105,7 +109,7 @@ export const proyectos = [
       },
       {
         class: null,
-        icono: "tailwindcss",
+        icono: "Tailwindcss",
       },
     ],
   },
@@ -126,7 +130,7 @@ export const proyectos = [
       },
       {
         class: null,
-        icono: "tailwindcss",
+        icono: "Tailwindcss",
       },
       {
         class: null,
