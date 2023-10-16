@@ -116,14 +116,11 @@ export const proyectos = [
   {
     img: "../../../img/spotify.webp",
     title: "Spotify-Clone",
-    link: "https://spotify-app-react.vercel.app/",
-    description: `spotify con su api donde te puedes connectar a tu cuenta de spotify ver tus listas de reproducción ver playList en tendencias y Albums etc.... aún en desarrollo`,
+    link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
+    description: `Clon de la página de Spotify, debido a las políticas de Spotify no lo puedo desplegar, pero tengo un video en mi LinkedIn donde puedes ver el resultado `,
     technologies: [
       {
         class: "fa-brands fa-react icon-skills skill-react",
-      },
-      {
-        class: "fa-brands fa-css3-alt icon-skills skill-css",
       },
       {
         class: "fa-brands fa-js icon-skills skill-javascript",
@@ -135,6 +132,10 @@ export const proyectos = [
       {
         class: null,
         icono: "Redux",
+      },
+      {
+        class: null,
+        icono: "ReactQuery",
       },
       
     ],
