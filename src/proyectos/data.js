@@ -1,23 +1,29 @@
 export const proyectos = [
   {
-    img: "../../../img/cyberpunk.webp",
-    title: "cyberpunk",
-    link: "https://preeminent-liger-266356.netlify.app/",
-    description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
-    el ususario puede ver los tailer de él juegos y también los
-    episodios de la serie....`,
+    img: "../../../img/ecommerce.webp",
+    title: "Mini Ecommerce Next Js",
+    link: "https://ecommerce-next-js-app.vercel.app/",
+    description: `un ecommerce con pasarela de pagos paypal integrada ,  autenticación de usuarios , filtros , busqueda de productos `,
     technologies: [
       {
-        class: "fa-brands fa-html5 icon-skills skill-html",
+        class: null,
+        icono: "TypeScript",
       },
       {
-        class: "fa-brands fa-css3-alt icon-skills skill-css",
+        class: null,
+        icono: "NextJs",
       },
       {
-        class: "fa-brands fa-js icon-skills skill-javascript",
+        class: null,
+        icono: "Tailwindcss",
+      },
+      {
+        class: null,
+        icono: "Zustand",
       },
     ],
   },
+
   {
     img: "../../../img/store-games.webp",
     title: "Store games",
@@ -68,6 +74,51 @@ export const proyectos = [
     ],
   },
   {
+    img: "../../../img/spotify.webp",
+    title: "Spotify-Clone",
+    link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
+    description: `Clon de la página de Spotify, debido a las políticas de Spotify no lo puedo desplegar, pero tengo un video en mi LinkedIn donde puedes ver el resultado `,
+    technologies: [
+      {
+        class: "fa-brands fa-react icon-skills skill-react",
+      },
+      {
+        class: "fa-brands fa-js icon-skills skill-javascript",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+      {
+        class: null,
+        icono: "Redux",
+      },
+      {
+        class: null,
+        icono: "ReactQuery",
+      },
+    ],
+  },
+  {
+    img: "../../../img/cyberpunk.webp",
+    title: "cyberpunk",
+    link: "https://preeminent-liger-266356.netlify.app/",
+    description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
+    el ususario puede ver los tailer de él juegos y también los
+    episodios de la serie....`,
+    technologies: [
+      {
+        class: "fa-brands fa-html5 icon-skills skill-html",
+      },
+      {
+        class: "fa-brands fa-css3-alt icon-skills skill-css",
+      },
+      {
+        class: "fa-brands fa-js icon-skills skill-javascript",
+      },
+    ],
+  },
+  {
     img: "../../../img/landing.webp",
     title: "Landing Realidad Virtual",
     link: "https://realityvirtual.netlify.app/",
@@ -111,33 +162,6 @@ export const proyectos = [
         class: null,
         icono: "Tailwindcss",
       },
-    ],
-  },
-  {
-    img: "../../../img/spotify.webp",
-    title: "Spotify-Clone",
-    link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
-    description: `Clon de la página de Spotify, debido a las políticas de Spotify no lo puedo desplegar, pero tengo un video en mi LinkedIn donde puedes ver el resultado `,
-    technologies: [
-      {
-        class: "fa-brands fa-react icon-skills skill-react",
-      },
-      {
-        class: "fa-brands fa-js icon-skills skill-javascript",
-      },
-      {
-        class: null,
-        icono: "Tailwindcss",
-      },
-      {
-        class: null,
-        icono: "Redux",
-      },
-      {
-        class: null,
-        icono: "ReactQuery",
-      },
-      
     ],
   },
 ];

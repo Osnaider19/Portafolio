@@ -435,7 +435,7 @@ main{
 .ul-proyects{
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: start;
     padding: 40px 0;
     flex-wrap: wrap;

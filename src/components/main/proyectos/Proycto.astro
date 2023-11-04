@@ -1,9 +1,12 @@
 ---
 import IconAstro from "../habilidades/IconAstro.astro";
+import IconNextjs from "../habilidades/IconNextjs.astro";
 import IconRadix from "../habilidades/IconRadix.astro";
 import IconReactQuery from "../habilidades/IconReactQuery.astro";
 import IconRedux from "../habilidades/IconRedux.astro";
 import IconTailwind from "../habilidades/IconTailwind.astro";
+import IconTypeScript from "../habilidades/IconTypeScript.astro";
+import IconZustand from "../habilidades/IconZustand.astro";
 
 type Technology = {
   icono?: string | null;
@@ -24,7 +27,10 @@ enum TYPESICONS {
   Astro = "Astro",
   Redux ="Redux",
   Radix = "Radix",
-  ReactQuery = "ReactQuery"
+  ReactQuery = "ReactQuery",
+  NextJs = "NextJs",
+  TypeScript = "TypeScript",
+  Zustand = "Zustand",
 }
 ---
 
@@ -44,6 +50,9 @@ enum TYPESICONS {
           if (icono === TYPESICONS.Redux) return <IconRedux />;
           if (icono === TYPESICONS.Radix) return <IconRadix />;
           if (icono === TYPESICONS.ReactQuery) return <IconReactQuery />;
+          if (icono === TYPESICONS.NextJs) return <IconNextjs />;
+          if (icono === TYPESICONS.TypeScript) return <IconTypeScript />;
+          if (icono === TYPESICONS.Zustand) return <IconZustand />;
           return;
         }
         return (
