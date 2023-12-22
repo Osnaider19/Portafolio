@@ -23,6 +23,26 @@ export const proyectos = [
       },
     ],
   },
+  {
+    img: "../../../img/nexanime.webp",
+    title: "NexAnime",
+    link: "https://nexanime.vercel.app",
+    description: `plataforma de anime para ver los animes en tendencia , más valorados , estadísticas. " En desarrollo " `,
+    technologies: [
+      {
+        class: null,
+        icono: "TypeScript",
+      },
+      {
+        class: null,
+        icono: "NextJs",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+    ],
+  },
 
   {
     img: "../../../img/store-games.webp",
