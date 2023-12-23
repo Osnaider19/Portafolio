@@ -97,7 +97,7 @@ export const proyectos = [
     img: "../../../img/spotify.webp",
     title: "Spotify-Clone",
     link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
-    description: `Clon de la página de Spotify, debido a las políticas de Spotify no lo puedo desplegar, pero tengo un video en mi LinkedIn donde puedes ver el resultado `,
+    description: `Clon de la página de Spotify con autenticación de usuario, reproductor de canciones, etc `,
     technologies: [
       {
         class: "fa-brands fa-react icon-skills skill-react",

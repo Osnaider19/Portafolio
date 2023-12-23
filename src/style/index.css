@@ -116,7 +116,6 @@ main{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 87vh;
     padding: 50px 0;
     width: 90%;
     margin: 0 auto;
