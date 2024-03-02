@@ -117,6 +117,29 @@ export const proyectos = [
     ],
   },
   {
+    img: "../../../img/fit-nation.webp",
+    title: "gym",
+    link: "https://fitnation.netlify.app/",
+    description: `landing page de una gym por ahora es una landing todavia está en
+            desarrollo la idea es que los usuarios puedan comprar productos de
+            el gym`,
+    technologies: [
+      {
+        class: "fa-brands fa-react icon-skills skill-react",
+      },
+      {
+        class: "fa-brands fa-css3-alt icon-skills skill-css",
+      },
+      {
+        class: "fa-brands fa-js icon-skills skill-javascript",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+    ],
+  },
+  {
     img: "../../../img/spotify.webp",
     title: "Spotify-Clone",
     link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
@@ -187,29 +210,6 @@ export const proyectos = [
       {
         class: null,
         icono: "Zustand",
-      },
-    ],
-  },
-  {
-    img: "../../../img/fit-nation.webp",
-    title: "gym",
-    link: "https://fitnation.netlify.app/",
-    description: `landing page de una gym por ahora es una landing todavia está en
-            desarrollo la idea es que los usuarios puedan comprar productos de
-            el gym`,
-    technologies: [
-      {
-        class: "fa-brands fa-react icon-skills skill-react",
-      },
-      {
-        class: "fa-brands fa-css3-alt icon-skills skill-css",
-      },
-      {
-        class: "fa-brands fa-js icon-skills skill-javascript",
-      },
-      {
-        class: null,
-        icono: "Tailwindcss",
       },
     ],
   },

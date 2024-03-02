@@ -8,7 +8,6 @@
 html{
     margin: 0 auto;
     scroll-behavior: smooth;
-    max-width: 1355px;
 }
 :root{
     --text : 'Lato', sans-serif;
@@ -44,7 +43,8 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    
+    max-width: 1355px;
+    margin: 0 auto;
 }
 .header h1{
     display: inline-block;
@@ -119,6 +119,7 @@ main{
     padding: 50px 0;
     width: 90%;
     margin: 0 auto;
+    max-width: 1355px;
     
 }
 .container-text{
@@ -302,6 +303,8 @@ main{
     display: flex;
     margin: 0 auto;
     padding: 20px 0;
+    max-width: 1355px;
+
 }
 
 .container-text-sobremi{
@@ -348,7 +351,9 @@ main{
     padding: 10px 0;
     margin: 0 auto;
     padding: 10px 0;
-    
+    height: 100%;
+    max-width: 1355px;
+
 }
 .title-skills{
     position: relative;
@@ -413,12 +418,15 @@ main{
 .section-proyects{
     position: relative;
     background-color: #111111;
+    overflow: hidden;
 }
 
 .container-proyects{
     position: relative;
     width: 90%;
     margin: 0 auto;
+    max-width: 1355px;
+
 }
 .title-proyects{
     position: relative;
@@ -574,6 +582,8 @@ main{
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
+    max-width: 1355px;
+
 }
 .title-contact{
     color: #f6f6f9;
