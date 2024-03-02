@@ -1,9 +1,9 @@
 export const proyectos = [
   {
-    img: "../../../img/ecommerce.webp",
-    title: "Mini Ecommerce Next Js",
-    link: "https://ecommerce-next-js-app.vercel.app/",
-    description: `un ecommerce con pasarela de pagos paypal integrada ,  autenticación de usuarios , filtros , busqueda de productos `,
+    img: "../../../img/ecommerce-stripe.webp",
+    title: "Ecommerce Stripe",
+    link: "https://ecommerce-stripe-763m.vercel.app/",
+    description: `un ecommerce con pasarela de pagos stripe integrada, destalles de el product etc. "En Desarrollo".  `,
     technologies: [
       {
         class: null,
@@ -20,6 +20,10 @@ export const proyectos = [
       {
         class: null,
         icono: "Zustand",
+      },
+      {
+        class: null,
+        icono: "Stripe",
       },
     ],
   },
@@ -45,6 +49,47 @@ export const proyectos = [
   },
 
   {
+    img: "../../../img/movie.webp",
+    title: "Movie Tv",
+    link: "https://movietvsite.netlify.app/",
+    description: `simulando una página de películas , consumiendo la API de themovietv
+            donde los usuarios pueden buscar películas y ver trailer.....`,
+    technologies: [
+      {
+        class: "fa-brands fa-react icon-skills skill-react",
+      },
+      {
+        class: "fa-brands fa-css3-alt icon-skills skill-css",
+      },
+      {
+        class: "fa-brands fa-js icon-skills skill-javascript",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+    ],
+  },
+  {
+    img: "../../../img/cyberpunk.webp",
+    title: "cyberpunk",
+    link: "https://preeminent-liger-266356.netlify.app/",
+    description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
+    el ususario puede ver los tailer de él juegos y también los
+    episodios de la serie....`,
+    technologies: [
+      {
+        class: "fa-brands fa-html5 icon-skills skill-html",
+      },
+      {
+        class: "fa-brands fa-css3-alt icon-skills skill-css",
+      },
+      {
+        class: "fa-brands fa-js icon-skills skill-javascript",
+      },
+    ],
+  },
+  {
     img: "../../../img/store-games.webp",
     title: "Store games",
     link: "https://store-games-site.netlify.app/",
@@ -68,28 +113,6 @@ export const proyectos = [
       {
         class: null,
         icono: "ReactQuery",
-      },
-    ],
-  },
-  {
-    img: "../../../img/movie.webp",
-    title: "Movie Tv",
-    link: "https://movietvsite.netlify.app/",
-    description: `simulando una página de películas , consumiendo la API de themovietv
-            donde los usuarios pueden buscar películas y ver trailer.....`,
-    technologies: [
-      {
-        class: "fa-brands fa-react icon-skills skill-react",
-      },
-      {
-        class: "fa-brands fa-css3-alt icon-skills skill-css",
-      },
-      {
-        class: "fa-brands fa-js icon-skills skill-javascript",
-      },
-      {
-        class: null,
-        icono: "Tailwindcss",
       },
     ],
   },
@@ -119,25 +142,7 @@ export const proyectos = [
       },
     ],
   },
-  {
-    img: "../../../img/cyberpunk.webp",
-    title: "cyberpunk",
-    link: "https://preeminent-liger-266356.netlify.app/",
-    description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
-    el ususario puede ver los tailer de él juegos y también los
-    episodios de la serie....`,
-    technologies: [
-      {
-        class: "fa-brands fa-html5 icon-skills skill-html",
-      },
-      {
-        class: "fa-brands fa-css3-alt icon-skills skill-css",
-      },
-      {
-        class: "fa-brands fa-js icon-skills skill-javascript",
-      },
-    ],
-  },
+
   {
     img: "../../../img/landing.webp",
     title: "Landing Realidad Virtual",
@@ -158,6 +163,30 @@ export const proyectos = [
       {
         class: null,
         icono: "Tailwindcss",
+      },
+    ],
+  },
+  {
+    img: "../../../img/ecommerce.webp",
+    title: "Mini Ecommerce Next Js",
+    link: "https://ecommerce-next-js-app.vercel.app/",
+    description: `un ecommerce con pasarela de pagos paypal integrada ,  autenticación de usuarios , filtros , busqueda de productos `,
+    technologies: [
+      {
+        class: null,
+        icono: "TypeScript",
+      },
+      {
+        class: null,
+        icono: "NextJs",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+      {
+        class: null,
+        icono: "Zustand",
       },
     ],
   },

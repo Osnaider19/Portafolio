@@ -7,6 +7,7 @@ import IconRedux from "../habilidades/IconRedux.astro";
 import IconTailwind from "../habilidades/IconTailwind.astro";
 import IconTypeScript from "../habilidades/IconTypeScript.astro";
 import IconZustand from "../habilidades/IconZustand.astro";
+import IconStripe from "../habilidades/IconStripe.astro";
 
 type Technology = {
   icono?: string | null;
@@ -31,6 +32,7 @@ enum TYPESICONS {
   NextJs = "NextJs",
   TypeScript = "TypeScript",
   Zustand = "Zustand",
+  Stripe = "Stripe",
 }
 ---
 
@@ -53,6 +55,7 @@ enum TYPESICONS {
           if (icono === TYPESICONS.NextJs) return <IconNextjs />;
           if (icono === TYPESICONS.TypeScript) return <IconTypeScript />;
           if (icono === TYPESICONS.Zustand) return <IconZustand />;
+          if (icono === TYPESICONS.Stripe) return <IconStripe />;
           return;
         }
         return (

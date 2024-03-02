@@ -3,11 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 1355px;
+    
 }
 html{
     margin: 0 auto;
     scroll-behavior: smooth;
+    max-width: 1355px;
 }
 :root{
     --text : 'Lato', sans-serif;
@@ -110,7 +111,6 @@ html::-webkit-scrollbar-thumb{
 main{
     position: relative;
     background-color: #000;
-    
 }
 .container-persentation{
     position: relative;
