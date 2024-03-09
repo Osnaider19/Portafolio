@@ -1,0 +1,97 @@
+---
+import { estudios } from "../../../proyectos/estudios.js";
+---
+
+<section class="section_estudios">
+  <div class="linear-grandient-1"></div>
+  <div class="content_estudios">
+    <h3 class="title-estudios" id="estudios">Estudios</h3>
+    <ul class="ul-estudios">
+      {
+        estudios.map(({ fecha, titulo, corporacion }) => (
+          <li class="li-estudios">
+            <span class="circle" />
+            <div>
+              <h3>{titulo}</h3>
+              <p>{corporacion}</p>
+              <span>{fecha}</span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .section_estudios {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #111111;
+    justify-content: center;
+    align-items: center;
+  }
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(at left center, rgba(1, 190, 150 , 0.5), transparent , transparent); */
+    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
+    background: ;
+    z-index: 0;
+  }
+  .content_estudios {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1355px;
+  }
+  .title-estudios {
+    font-size: 27px;
+    color: #f6f6f9;
+    text-align: left;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+    padding: 20px 0;
+  }
+  .ul-estudios {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .li-estudios {
+    padding: 0px 20px;
+    color: #f6f6f9;
+    border-left: 1px solid #f6f6f9;
+    list-style: none;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: -5px;
+    top: 5px;
+    background-color: #f6f6f9;
+  }
+  .li-estudios h3 {
+    padding-bottom: 5px;
+    font-weight: 200;
+  }
+  .li-estudios p {
+    padding: 5px 0;
+  }
+  .li-estudios span {
+    font-size: 13px;
+  }
+</style>
