@@ -47,7 +47,33 @@ export const proyectos = [
       },
     ],
   },
-
+  {
+    img: "../../../img/store-games.webp",
+    title: "Store games",
+    link: "https://store-games-site.netlify.app/",
+    description: `Simulando una página de juegos , consumiendo la API de rawg api
+    donde los usuarios pueden buscar videojuegos, ver sus detalles como
+    creadores , calificaciones,tiendas donde comprar.....`,
+    technologies: [
+      {
+        class: "fa-brands fa-react icon-skills skill-react",
+      },
+      {
+        class: "fa-brands fa-css3-alt icon-skills skill-css",
+      },
+      {
+        class: "fa-brands fa-js icon-skills skill-javascript",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+      {
+        class: null,
+        icono: "ReactQuery",
+      },
+    ],
+  },
   {
     img: "../../../img/movie.webp",
     title: "Movie Tv",
@@ -89,33 +115,7 @@ export const proyectos = [
       },
     ],
   },
-  {
-    img: "../../../img/store-games.webp",
-    title: "Store games",
-    link: "https://store-games-site.netlify.app/",
-    description: `Simulando una página de juegos , consumiendo la API de rawg api
-    donde los usuarios pueden buscar videojuegos, ver sus detalles como
-    creadores , calificaciones,tiendas donde comprar.....`,
-    technologies: [
-      {
-        class: "fa-brands fa-react icon-skills skill-react",
-      },
-      {
-        class: "fa-brands fa-css3-alt icon-skills skill-css",
-      },
-      {
-        class: "fa-brands fa-js icon-skills skill-javascript",
-      },
-      {
-        class: null,
-        icono: "Tailwindcss",
-      },
-      {
-        class: null,
-        icono: "ReactQuery",
-      },
-    ],
-  },
+
   {
     img: "../../../img/fit-nation.webp",
     title: "gym",
