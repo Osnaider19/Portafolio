@@ -45,7 +45,10 @@ import IconZustand from "./IconZustand.astro";
         <i class="fa-brands fa-react icon-skills icon-react"></i>
         <p class="p-skills">React Js</p>
       </li>
-
+      <li class="li-skills">
+        <IconNextjs />
+        <p class="p-skills">Next Js</p>
+      </li>
       <li class="li-skills">
         <i class="fa-brands fa-git-alt icon-skills icon-git"></i>
         <p class="p-skills">Git</p>
@@ -77,10 +80,7 @@ import IconZustand from "./IconZustand.astro";
         <IconReactQuery />
         <p class="p-skills">React Query</p>
       </li>
-      <li class="li-skills">
-        <IconNextjs />
-        <p class="p-skills">Next Js</p>
-      </li>
+
       <li class="li-skills">
         <IconZustand />
         <p class="p-skills">Zustand</p>
@@ -107,8 +107,52 @@ import IconZustand from "./IconZustand.astro";
       transparent,
       rgba(1, 190, 150, 0.5)
     ); */
-    background: linear-gradient(to top, #000  , rgba(1, 190, 150, 0.5));
+    background: linear-gradient(to top, #000, rgba(1, 190, 150, 0.5));
 
     z-index: 0;
+  }
+
+  .ul-skill {
+    position: relative;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    padding: 40px 0;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @media (min-width: 300px) {
+    .ul-skill {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 20px 0;
+    }
+  }
+  @media (min-width: 550px) {
+    .ul-skill {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 20px 0;
+    }
+  }
+  @media (min-width: 800px) {
+    .ul-skill {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media (min-width: 1000px) {
+    .ul-skill {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media (min-width: 1200px) {
+    .ul-skill {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  @media (min-width: 1350px) {
+    .ul-skill {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 </style>

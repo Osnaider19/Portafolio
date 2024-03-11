@@ -259,8 +259,8 @@ main {
   justify-content: center;
 
   overflow: hidden;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   margin-top: 30px;
   margin-left: 110px;
   border-radius: 50%;
@@ -352,32 +352,16 @@ main {
   scroll-margin-top: 80px;
 }
 
-.ul-skill {
-  position: relative;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 40px 0;
-  width: 100%;
-  overflow: hidden;
-}
-
 .li-skills {
   display: flex;
   list-style: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
+  text-align: center;
 }
 
-@media (min-width: 700px) {
-  .li-skills {
-    padding: 30px;
-  }
-}
 .icon-skills {
   font-size: 50px;
 }
@@ -436,6 +420,7 @@ main {
   padding: 40px 0;
   width: 100%;
   height: 100%;
+  
 }
 .ul-proyects a {
   text-decoration: none;
@@ -465,7 +450,7 @@ main {
   list-style: none;
   border: 1px solid #3d3e4f;
   overflow: hidden;
-  max-width: 350px;
+  max-width: 380px;
   min-width: 300px;
   width: 100%;
   border-radius: 2px;
@@ -642,12 +627,6 @@ main {
 
 /*Responsivo*/
 
-@media (max-width: 1000px) {
-  .photo-perfil {
-    min-width: 350px;
-    min-height: 350px;
-  }
-}
 @media (max-width: 900px) {
   .container-persentation {
     flex-direction: column-reverse;
@@ -803,13 +782,6 @@ main {
 @media (max-width: 640px) {
   .p-presentation {
     width: 100%;
-  }
-  .li-proyects img {
-    width: 400px;
-  }
-
-  .li-proyects {
-    width: 400px;
   }
 }
 
