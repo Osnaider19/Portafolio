@@ -3,7 +3,7 @@ export const proyectos = [
     img: "../../../img/ecommerce-stripe.webp",
     title: "Ecommerce Stripe",
     link: "https://ecommerce-stripe-763m.vercel.app/",
-    description: `un ecommerce con pasarela de pagos stripe integrada, destalles de el product etc. "En Desarrollo".  `,
+    description: `Proyecto fullStack de un ecommerce con pasarela de pagos stripe integrada, destalles de el product etc. "En Desarrollo".  `,
     technologies: [
       {
         class: null,
