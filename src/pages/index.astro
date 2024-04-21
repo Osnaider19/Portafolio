@@ -3,6 +3,7 @@ import Header from "../components/header/Header.astro";
 import "../style/index.css";
 import Main from "../components/main/main.astro";
 import Footer from "../components/footer/Footer.astro";
+import previewpage from "../../public/img/preview-page.webp";
 ---
 
 <html lang="es">
@@ -15,6 +16,11 @@ import Footer from "../components/footer/Footer.astro";
       name="description"
       content="Osnaider Martinez de desarrollador web Frontend React Js , Astro , Next Js"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://osnaidermartinez.netlify.app/" />
+    <meta property="og:site_name" content="Osnaider Martinez" />
+    <meta property="og:title" content="Osnaider Martinez Portafolio" />
+    <meta property="og:image" content={previewpage} />
     <script
       src="https://kit.fontawesome.com/2898a0ac51.js"
       crossorigin="anonymous"
