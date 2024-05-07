@@ -1,9 +1,33 @@
 export const proyectos = [
   {
+    img: "../../../img/tasks-manager.webp",
+    title: "Tasks Manager",
+    link: "https://task-manager-ecru-chi.vercel.app/dashboard",
+    description: `Administrador de tareas con drag and drop autenticación con Clerk , shadcn.  "En Desarrollo "`,
+    technologies: [
+      {
+        class: null,
+        icono: "TypeScript",
+      },
+      {
+        class: null,
+        icono: "NextJs",
+      },
+      {
+        class: null,
+        icono: "Tailwindcss",
+      },
+      {
+        class: null,
+        icono: "Zustand",
+      },
+    ],
+  },
+  {
     img: "../../../img/ecommerce-stripe-2.webp",
     title: "Ecommerce Stripe",
     link: "https://ecommerce-stripe-763m.vercel.app/",
-    description: `Proyecto FullStack de un ecommerce con pasarela de pagos stripe integrada, destalles de el product etc. "En Desarrollo".  `,
+    description: `Proyecto FullStack de un ecommerce con pasarela de pagos stripe integrada, destalles de el product etc.  `,
     technologies: [
       {
         class: null,
@@ -31,7 +55,7 @@ export const proyectos = [
     img: "../../../img/nexanime.webp",
     title: "NexAnime",
     link: "https://nexanime.vercel.app",
-    description: `plataforma de anime para ver los animes en tendencia , más valorados , estadísticas. " En desarrollo " `,
+    description: `plataforma de anime para ver los animes en tendencia , más valorados , estadísticas.`,
     technologies: [
       {
         class: null,
@@ -186,30 +210,6 @@ export const proyectos = [
       {
         class: null,
         icono: "Tailwindcss",
-      },
-    ],
-  },
-  {
-    img: "../../../img/ecommerce.webp",
-    title: "Mini Ecommerce Next Js",
-    link: "https://ecommerce-next-js-app.vercel.app/",
-    description: `un ecommerce con pasarela de pagos paypal integrada ,  autenticación de usuarios , filtros , busqueda de productos `,
-    technologies: [
-      {
-        class: null,
-        icono: "TypeScript",
-      },
-      {
-        class: null,
-        icono: "NextJs",
-      },
-      {
-        class: null,
-        icono: "Tailwindcss",
-      },
-      {
-        class: null,
-        icono: "Zustand",
       },
     ],
   },
