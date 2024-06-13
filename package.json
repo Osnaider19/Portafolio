@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vercel": "^7.7.0",
     "@splidejs/splide": "^4.1.4",
-    "astro": "^2.4.1"
+    "astro": "^4.10.2"
   }
 }

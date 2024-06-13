@@ -1,5 +1,6 @@
 ---
-import photoperfil from "./photo-perfil.webp";
+import { Image } from "astro:assets";
+import photoperfil from "../../../../public/img/photo-perfil.webp";
 ---
 
 <div class="content-presentation">
@@ -78,7 +79,8 @@ import photoperfil from "./photo-perfil.webp";
     <div class="container-photo-profile">
       <div class="photo-perfil">
         <picture>
-          <img src={photoperfil} alt="Osnaider Martinez" id="inicio" />
+          {/* If you are not using vercel, place a normal <img> tag */}
+          <Image src={photoperfil} alt="Osnaider Martinez" id="inicio" />
         </picture>
       </div>
     </div>
