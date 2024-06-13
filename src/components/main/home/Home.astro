@@ -1,0 +1,362 @@
+---
+import photoperfil from "./photo-perfil.webp";
+---
+
+<div class="content-presentation">
+  <div class="linear-gradient-2"></div>
+  <div class="linear-gradient-1"></div>
+  <dir class="container-persentation">
+    <div class="container-text">
+      <!-- <h2 class="text-hello">Hola <strong>soy</strong></h2> -->
+      <h2 class="text-name">Osnaider Martinez</h2>
+      <div class="container-profession">
+        <div>
+          <span class="p-profession">D</span>
+          <span class="p-profession">e</span>
+          <span class="p-profession">s</span>
+          <span class="p-profession">a</span>
+          <span class="p-profession">r</span>
+          <span class="p-profession">r</span>
+          <span class="p-profession">o</span>
+          <span class="p-profession">l</span>
+          <span class="p-profession">l</span>
+          <span class="p-profession">a</span>
+          <span class="p-profession">d</span>
+          <span class="p-profession">o</span>
+          <span class="p-profession">r</span>
+          <span class="">&nbsp;</span>
+        </div>
+        <div class="">
+          <span class="p-profession">F</span>
+          <span class="p-profession">r</span>
+          <span class="p-profession">o</span>
+          <span class="p-profession">n</span>
+          <span class="p-profession">t</span>
+          <span class="p-profession">-</span>
+          <span class="p-profession">e</span>
+          <span class="p-profession">n</span>
+          <span class="p-profession">d</span>
+          <span class="">&nbsp;</span>
+          <span class="p-profession">J</span>
+          <span class="p-profession">r</span>
+        </div>
+      </div>
+      <p class="p-presentation">
+        Con más de 1 año de experiencia en la creación de experiencias web
+        atractivas y funcionales. Experto en tecnologías front-end, incluyendo
+        HTML5, CSS3, JavaScript y frameworks como React, Next.js, Astro. Capaz
+        de traducir diseños creativos en código interactivo y optimizar la
+        velocidad y el rendimiento del sitio web.
+      </p>
+      <div class="container-curriculum">
+        <a href="https://wa.me/+573166026155" target="_blank" class="a-action"
+          >Hablemos</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1VKgzg5L6JUiRx5d3_kOIjIeQRmthdhM2/view?usp=sharing"
+          class="a-curriculum"
+          target="_blank">Ver Currículum</a
+        >
+      </div>
+      <div class="container-social">
+        <p class="">Echa un vistaso a mi</p>
+        <a href="https://github.com/Osnaider19" target="_blank">
+          <li class="li-social">
+            <i class="fa-brands fa-github"></i>
+          </li>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/"
+          target="_blank"
+        >
+          <li class="li-social">
+            <i class="fa-brands fa-linkedin"></i>
+          </li>
+        </a>
+      </div>
+    </div>
+    <div class="container-photo-profile">
+      <div class="photo-perfil">
+        <picture>
+          <img src={photoperfil} alt="Osnaider Martinez" id="inicio" />
+        </picture>
+      </div>
+    </div>
+  </dir>
+</div>
+
+<script>
+  const letters = document.querySelectorAll(".p-profesion");
+  letters.forEach((letter) => {
+    letter.addEventListener("mouseenter", () => {
+      toogle(letter);
+    });
+  });
+
+  function toogle(letter) {
+    letter.classList.add("bouncing");
+    letter.addEventListener("animationend", () => {
+      letter.classList.remove("bouncing");
+    });
+  }
+</script>
+
+<style>
+  .content-presentation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .linear-gradient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 520px;
+    background: radial-gradient(
+      at left center,
+      rgba(1, 190, 150, 0.5),
+      transparent,
+      transparent
+    );
+    z-index: 0;
+  }
+  .linear-gradient-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      at right center,
+      rgba(1, 190, 150, 0.6),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+    );
+    z-index: 0;
+  }
+
+  .container-persentation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1355px;
+  }
+  .container-text {
+    position: relative;
+    width: 50%;
+    color: #f6f6f9;
+  }
+  .text-hello {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .text-name {
+    padding: 5px 0;
+    font-size: 30px;
+    color: #01be96;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+  .container-profession {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  .p-profession {
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  }
+
+  .bouncing {
+    transition: 0.8s all;
+    color: #01be96;
+    animation: rubberband 400ms alternate ease-out;
+  }
+
+  @keyframes rubberband {
+    10% {
+      transform: scaleX(1);
+    }
+    40% {
+      transform: scaleX(1.12) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    75% {
+      transform: scaleX(0.9) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.85) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+
+  .p-presentation {
+    padding: 12px 0;
+    font-size: 19px;
+    width: 90%;
+    text-align: left;
+  }
+
+  .container-curriculum {
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+  }
+  .a-action {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    border: 1px solid #01be96;
+    font-size: 18px;
+    background-color: #01be96;
+    text-decoration: none;
+    color: #f6f6f9;
+    transition: 0.3s;
+  }
+  .a-action:hover {
+    transform: translateX(4px);
+  }
+
+  .a-curriculum {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    color: #f6f6f9;
+    border: 1px solid #01be96;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .a-curriculum:hover {
+    background-color: rgba(1, 190, 150, 0.3);
+    transform: translateX(4px);
+  }
+
+  .container-social {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .container-social a {
+    text-decoration: none;
+  }
+
+  .li-social {
+    position: relative;
+    list-style: none;
+    background-color: #01be96;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 40px;
+  }
+
+  .li-social i {
+    font-size: 25px;
+    color: #f6f6f9;
+  }
+
+  .li-social:hover {
+    transform: rotate(-360deg);
+  }
+
+  .container-photo-profile {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-perfil {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 110px;
+    border-radius: 50%;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-radius: 64% 36% 29% 71% / 59% 79% 21% 41%; */
+  }
+
+  .photo-perfil img {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(-10px -5px 10px #000) contrast(110%);
+    transition: 0.3s;
+  }
+
+   {
+    /* responsive*/
+  }
+  @media (max-width: 900px) {
+    .container-persentation {
+      flex-direction: column-reverse;
+      height: auto;
+      gap: 30px;
+      padding-top: 100px;
+    }
+    .container-photo-profile {
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      margin: 0;
+    }
+    .photo-perfil {
+      margin: 0;
+    }
+    .container-text {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .p-presentation {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container-curriculum {
+      display: flex;
+      gap: 10px;
+    }
+    .linear-gradient-1 {
+      display: none;
+    }
+  }
+</style>
