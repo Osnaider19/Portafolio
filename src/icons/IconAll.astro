@@ -1,0 +1,51 @@
+---
+import IconAstro from "./IconAstro.astro";
+import IconMaterialUi from "./IconMaterialUi.astro";
+import IconNextjs from "./IconNextjs.astro";
+import IconRedux from "./IconRedux.astro";
+import IconStyled from "./IconStyled.astro";
+import IconTailwind from "./IconTailwind.astro";
+import IconRadix from "./IconRadix.astro";
+import IconReactQuery from "./IconReactQuery.astro";
+import IconTypeScript from "./IconTypeScript.astro";
+import IconZustand from "./IconZustand.astro";
+import IconHtml from "./IconHtml.astro";
+import IconCss from "./IconCss.astro";
+import IconReact from "./IconReact.astro";
+import IconGit from "./IconGit.astro";
+import IconGitHub from "./IconGtiHub.astro";
+import IconStripe from "./IconStripe.astro";
+import IconJavaScript from "./IconJavaScritp.astro";
+import IconShadcn from "./IconShadcn.astro";
+import IconMongodb from "./IconMongodb.astro";
+import IconNodeJs from "./IconNodeJs.astro";
+import IconVite from "./IconVite.astro";
+
+export const ICONS = {
+  html: IconHtml,
+  css: IconCss,
+  javaScript: IconJavaScript,
+  react: IconReact,
+  astro: IconAstro,
+  materialUi: IconMaterialUi,
+  nextjs: IconNextjs,
+  redux: IconRedux,
+  styled: IconStyled,
+  tailwind: IconTailwind,
+  radix: IconRadix,
+  reactQuery: IconReactQuery,
+  typeScript: IconTypeScript,
+  zustand: IconZustand,
+  git: IconGit,
+  github: IconGitHub,
+  stripe: IconStripe,
+  shadcn: IconShadcn,
+  mongodb: IconMongodb,
+  nodejs : IconNodeJs,
+  vite : IconVite,
+};
+
+export function getIconComponent(iconName: string) {
+  return ICONS[iconName] || null;
+}
+---
