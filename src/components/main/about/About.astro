@@ -1,0 +1,114 @@
+<section class="section-about">
+  <div class="linear-grandient-1"></div>
+  <div class="container-about">
+    <div class="container-text-about">
+      <h2 class="title-about" id="sobremi">Sobre mi</h2>
+      <p>
+        Soy un profesional del desarrollo de software, especializado en el
+        desarrollo web front-end. Desde que comencé mis estudios en
+        programación, descubrí mi interés por crear interfaces web intuitivas y
+        atractivas. Cada día me dedico a aprender y practicar nuevas tecnologías
+        para seguir mejorando mis habilidades. Me considero una persona
+        responsable, dinámica y creativa, con una gran capacidad de adaptación y
+        un constante deseo de trabajar y aprender. Tengo iniciativa para
+        resolver problemas y disfruto enfrentando nuevos desafíos en el campo de
+        la tecnología. En el futuro, planeo expandir mis conocimientos y dominar
+        una variedad aún mayor de herramientas y técnicas en el desarrollo web.
+      </p>
+    </div>
+    <div class="container-svg-about">
+      <div class="container-svg">
+        <lottie-player
+          src="https://assets8.lottiefiles.com/packages/lf20_sg18igu8.json"
+          background="transparent"
+          speed="1"
+          style="width: 380px; height: 380px; position:relative;"
+          loop
+          autoplay></lottie-player>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(at left center, rgba(1, 190, 150 , 0.5), transparent , transparent); */
+    background: linear-gradient(to top, #000, rgba(1, 190, 150, 0.5));
+    background: ;
+    z-index: 0;
+  }
+
+  .section-about {
+    position: relative;
+    background-color: #111111;
+  }
+  .container-about {
+    position: relative;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1355px;
+  }
+
+  .container-text-about {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-about {
+    position: relative;
+    display: block;
+    font-size: 27px;
+    padding: 10px 0;
+    color: #f6f6f9;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+  }
+  .container-text-about p {
+    font-size: 17px;
+    color: #f6f6f9;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  .container-svg-about {
+    position: relative;
+    width: 50%;
+  }
+  .container-svg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+  }
+
+  /*  responsive  */
+
+  @media (max-width: 900px) {
+    /*Resposivo de la seccion sobre mi*/
+    .container-about {
+      flex-direction: column;
+    }
+    .container-svg-about {
+      width: 100%;
+    }
+    .container-svg {
+      justify-content: start;
+      align-items: end;
+      padding: 0;
+    }
+    .container-text-about {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+</style>
