@@ -1,0 +1,119 @@
+---
+import { skills } from "../../../const/const";
+import { getIconComponent } from "../../../icons/IconAll.astro";
+---
+
+<section class="section-skill">
+  <div class="linear-grandient-1"></div>
+  <div class="container-skill">
+    <h2 class="title-skills" id="skills">Habilidades</h2>
+    <ul class="ul-skill">
+      {
+        skills.map(({ icon, title }) => {
+          const IconComponent = getIconComponent(icon);
+          return (
+            <li class="li-skills">
+              {IconComponent && <IconComponent />}
+              <p class="p-skill">{title}</p>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .section-skill {
+    position: relative;
+    overflow: hidden;
+    background-color: #111111;
+  }
+  .container-skill {
+    position: relative;
+    width: 90%;
+    color: #f6f6f9;
+    padding: 10px 0;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 100%;
+    max-width: 1355px;
+  }
+  .title-skills {
+    position: relative;
+    display: block;
+    font-size: 27px;
+    padding: 10px 0;
+    color: #f6f6f9;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+  }
+
+  .li-skills {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .p-skill {
+    padding: 5px 0;
+  }
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, rgba(1, 190, 150, 0.5));
+    z-index: 0;
+  }
+
+  .ul-skill {
+    position: relative;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    padding: 40px 0;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @media (min-width: 300px) {
+    .ul-skill {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 20px 0;
+    }
+  }
+  @media (min-width: 550px) {
+    .ul-skill {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 20px 0;
+    }
+  }
+  @media (min-width: 800px) {
+    .ul-skill {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media (min-width: 1000px) {
+    .ul-skill {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media (min-width: 1200px) {
+    .ul-skill {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  @media (min-width: 1350px) {
+    .ul-skill {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+</style>

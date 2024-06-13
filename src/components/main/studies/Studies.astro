@@ -1,0 +1,97 @@
+---
+import { studies } from "../../../const/const";
+---
+
+<section class="section_studies">
+  <div class="linear-grandient-1"></div>
+  <div class="content_studies">
+    <h3 class="title-studies" id="studies">Estudios</h3>
+    <ul class="ul-studies">
+      {
+        studies.map(({ date, title, corporation }) => (
+          <li class="li-studies">
+            <span class="circle" />
+            <div>
+              <h3>{title}</h3>
+              <p>{corporation}</p>
+              <span>{date}</span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .section_studies {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #111111;
+    justify-content: center;
+    align-items: center;
+  }
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(at left center, rgba(1, 190, 150 , 0.5), transparent , transparent); */
+    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
+    background: ;
+    z-index: 0;
+  }
+  .content_studies {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1355px;
+  }
+  .title-studies {
+    font-size: 27px;
+    color: #f6f6f9;
+    text-align: left;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+    padding: 20px 0;
+  }
+  .ul-studies {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .li-studies {
+    padding: 0px 20px;
+    color: #f6f6f9;
+    border-left: 1px solid #f6f6f9;
+    list-style: none;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: -5px;
+    top: 5px;
+    background-color: #f6f6f9;
+  }
+  .li-studies h3 {
+    padding-bottom: 5px;
+    font-weight: 200;
+  }
+  .li-studies p {
+    padding: 5px 0;
+  }
+  .li-studies span {
+    font-size: 13px;
+  }
+</style>
