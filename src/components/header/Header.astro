@@ -1,6 +1,5 @@
 <header class="header">
   <h1 id="inicio">Portafolio</h1>
-  <!-- <div class="effect-items-menu" id="menu-hover"></div> -->
   <nav class="nav">
     <ul class="ul-nav">
       <a href="#inicio">
@@ -59,28 +58,177 @@
       $menuDrop.classList.toggle("activa-menu-drop");
     });
   </script>
-
-  <script>
-    // const menuHover = document.querySelector("#menu-hover");
-    // const listItems = document.querySelectorAll(".li-nav");
-    // listItems.forEach((item) => {
-    //   const { top, left, width, height } = item.getBoundingClientRect();
-    //   item.addEventListener("mouseenter", () => {
-    //     menuHover.style.setProperty("--height", `${height}px`);
-    //     menuHover.style.setProperty("--width", `${width}px`);
-    //     menuHover.style.setProperty("--top", `${top}px`);
-    //     menuHover.style.setProperty("--left", `${left}px`);
-
-    //     menuHover.style.visibility = "visible";
-    //     menuHover.style.opacity = 1;
-    //   });
-    // });
-
-    // listItems.forEach((item) => {
-    //   item.addEventListener("mouseleave", () => {
-    //     menuHover.style.visibility = "hidden";
-    //     menuHover.style.opacity = 0;
-    //   });
-    // });
-  </script>
 </header>
+
+<style is:global>
+  .header {
+    position: relative;
+    height: 80px;
+    background-color: #000;
+    width: 100%;
+    padding: 20px 20px;
+    color: #f6f6f9;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    max-width: 1355px;
+    margin: 0 auto;
+  }
+  .header h1 {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
+  }
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f6f6f9;
+  }
+  .ul-nav {
+    position: relative;
+    display: flex;
+  }
+
+  .ul-nav a {
+    text-decoration: none;
+    color: #f6f6f9;
+  }
+  .li-nav {
+    position: relative;
+    list-style: none;
+    color: #f6f6f9;
+    transition: 0.3s;
+    margin: 0 10px;
+    padding: 4px 2px;
+    text-align: center;
+  }
+  .li-nav::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: #01be96;
+    bottom: -3px;
+  }
+  .li-nav:hover::before {
+    width: 100%;
+    transition: 0.4s;
+  }
+  .li-nav:hover {
+    color: #01be96;
+  }
+
+  .container-bnt-menu {
+    display: none;
+  }
+
+  .menu-drop {
+    display: none;
+  }
+  /* resposive */
+
+  @media (max-width: 720px) {
+    .menu-drop {
+      display: block;
+    }
+    .container-bnt-menu {
+      display: block;
+    }
+    .header {
+      position: fixed;
+      display: flex;
+
+      justify-items: center;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      /* background: rgba(255,255,255,0.1);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px); */
+    }
+    h1 {
+      display: inline-block;
+    }
+    .container-bnt-menu {
+      position: relative;
+      padding: 0px 20px;
+      z-index: 9999;
+    }
+    .linea-menu {
+      display: block;
+      position: relative;
+      height: 2px;
+      width: 40px;
+      background-color: #f6f6f9;
+      top: -5px;
+      margin-top: 10px;
+      cursor: pointer;
+      transform-origin: 0px 100%;
+      transition: all 0.4s;
+    }
+    .activelinea1__bars-menu {
+      transform: rotate(40deg) translate(-2px, 1px);
+    }
+    .activelinea2__bars-menu {
+      opacity: 0;
+      margin-left: -30px;
+    }
+    .activelinea3__bars-menu {
+      transform: rotate(-40deg) translate(-2px, 1px);
+    }
+    .nav {
+      position: fixed;
+      flex-direction: column;
+      background: #111111;
+      width: auto;
+      height: 100vh;
+      right: -300px;
+      top: 80px;
+      transition: right 0.4s ease-in-out;
+      z-index: 100;
+    }
+
+    .li-nav {
+      padding: 30px 80px;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      
+    }
+    .li-nav:hover {
+      background-color: #01be96;
+      color : #000
+    }
+    .li-nav:hover::before {
+      content: "";
+      width: 0;
+      height: 0;
+    }
+
+    .menu-activado {
+      right: 0px;
+      transition: right 0.4s ease-in-out;
+    }
+    .menu-drop {
+      top: 0;
+      left: 0;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 20;
+      display: none;
+    }
+    .activa-menu-drop {
+      display: block;
+      transition: 0.5s display;
+    }
+    .ul-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+</style>

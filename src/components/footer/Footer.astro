@@ -40,23 +40,68 @@
 </footer>
 
 <style>
-  .section-skill {
-    position: relative;
-  }
   .linear-grandient-1 {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(1, 190, 150, 0.5) , #000);
-   
-    /* background: linear-gradient(
-      to right,
-      transparent,
-      transparent,
-      rgba(1, 190, 150, 0.5)
-    ); */
+    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
     z-index: 0;
+  }
+  .section-footer {
+    position: relative;
+    width: 100%;
+    background-color: #111111;
+  }
+  .container-footer {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1355px;
+  }
+  .title-contact {
+    color: #f6f6f9;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+    scroll-margin-top: 80px;
+  }
+  .container-redes {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 30px 0;
+    flex-wrap: wrap;
+  }
+
+  .container-redes a {
+    text-decoration: none;
+    color: #f6f6f9;
+  }
+  .li-contact {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: color 0.2s ease-in-out;
+  }
+  .li-contact i {
+    font-size: 30px;
+  }
+
+  .li-contact:hover {
+    color: #01be96;
+  }
+  .container-copy {
+    position: relative;
+    color: #f6f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
   }
 </style>
