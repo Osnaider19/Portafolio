@@ -1,0 +1,94 @@
+---
+import { projects } from "../../../const/const";
+import Project from "./Project.astro";
+---
+
+<section class="section-projects">
+  <div class="linear-grandient-1"></div>
+  <div class="container-projects">
+    <h2 class="title-projects" id="proyectos">Proyectos</h2>
+    <div>
+      <ul class="ul-projects">
+        {
+          projects.map(({ description, img, link, technologies, title }) => (
+            <Project
+              img={img}
+              description={description}
+              link={link}
+              title={title}
+              technologies={technologies}
+            />
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
+    z-index: 0;
+  }
+
+  .section-projects {
+    position: relative;
+    background-color: #111111;
+    overflow: hidden;
+  }
+
+  .container-projects {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1355px;
+  }
+  .title-projects {
+    position: relative;
+    display: block;
+    font-size: 27px;
+    padding: 20px 0;
+    color: #f6f6f9;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+  }
+
+  .ul-projects {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+  }
+  .ul-projects a {
+    text-decoration: none;
+  }
+
+  /* responsive */
+
+  @media (min-width: 300px) {
+    .ul-projects {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  }
+  @media (min-width: 700px) {
+    .ul-projects {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .ul-projects {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+    }
+  }
+</style>

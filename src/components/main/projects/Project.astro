@@ -1,0 +1,155 @@
+---
+import { getIconComponent } from "../../../icons/IconAll.astro";
+
+type Technology = {
+  icon?: string;
+};
+
+export interface Props {
+  title: string;
+  img: string;
+  description: string;
+  technologies?: Technology[];
+  link: string;
+}
+
+const { technologies, title, img, description, link } = Astro.props;
+---
+
+<li class="li-project">
+  <img src={img} alt={title} loading="lazy" />
+  <p class="title-project">{title}</p>
+  <p class="description-project">
+    {description}
+  </p>
+  <p class="title-technologies">tecnologías usadas</p>
+  <div class="container-technologies">
+    {
+      technologies.map(({ icon }) => {
+        const IconComponent = getIconComponent(icon);
+        return <i>{IconComponent && <IconComponent />}</i>;
+      })
+    }
+  </div>
+  <div class="container-link-project">
+    <a href={link} target="_blank">Ver más</a>
+  </div>
+</li>
+
+<style>
+  .li-project {
+    position: relative;
+    list-style: none;
+    border: 1px solid #3d3e4f;
+    overflow: hidden;
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    border-radius: 2px;
+    transition: transform, box-shadow, 0.3s;
+    border-radius: 7px;
+    background-color: #25242d;
+    z-index: 1;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .li-project:nth-child() {
+    min-height: 100%;
+  }
+
+  .li-project::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  .li-project:hover::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  .li-project:hover {
+    transform: translateY(-10px);
+  }
+  .li-project img {
+    position: relative;
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    user-select: none;
+    pointer-events: none;
+  }
+  .title-project {
+    color: #f6f6f9;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .title-project::first-letter {
+    text-transform: capitalize;
+  }
+
+  .title-technologies {
+    color: #f6f6f9;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .description-project {
+    padding: 0 10px;
+    color: #f6f6f990;
+    font-size: 17px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .description-project::first-letter {
+    text-transform: capitalize;
+  }
+
+  .title-technologies::first-letter {
+    text-transform: capitalize;
+  }
+
+  .container-technologies {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding: 10px 10px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    color: white;
+  }
+  .container-link-project {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .container-link-project a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #01be96;
+    border-radius: 5px;
+    color: #f6f6f9;
+    justify-content: space-between;
+  }
+</style>
