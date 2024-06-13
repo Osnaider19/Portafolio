@@ -38,6 +38,7 @@ export const IconKeys = {
   nodejs: "nodejs",
   mongodb: "mongodb",
   vite: "vite",
+  // here add more icon keys
 };
 
 export const skills = [

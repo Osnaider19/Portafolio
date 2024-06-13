@@ -41,8 +41,11 @@ export const ICONS = {
   stripe: IconStripe,
   shadcn: IconShadcn,
   mongodb: IconMongodb,
-  nodejs : IconNodeJs,
-  vite : IconVite,
+  nodejs: IconNodeJs,
+  vite: IconVite,
+  // add new icons here <--
+  // Make sure that when calling the icon the key is the same
+  // "optional" in the IconKeys const file adds the icon key for when you call IconKeys.nameIcon
 };
 
 export function getIconComponent(iconName: string) {
