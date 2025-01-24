@@ -130,29 +130,6 @@ export const skills = [
 
 export const projects = [
   {
-    img: "../../../img/tasks-manager.webp",
-    title: "Tasks Manager",
-    link: "https://task-manager-ecru-chi.vercel.app/dashboard",
-    description: `Administrador de tareas con drag and drop autenticación con Clerk , shadcn.  "En Desarrollo "`,
-    technologies: [
-      {
-        icon: IconKeys.typeScript,
-      },
-      {
-        icon: IconKeys.nextjs,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.zustand,
-      },
-      {
-        icon: IconKeys.shadcn,
-      },
-    ],
-  },
-  {
     img: "../../../img/ecommerce-stripe-2.webp",
     title: "Ecommerce Stripe",
     link: "https://ecommerce-stripe-763m.vercel.app/",
@@ -189,6 +166,25 @@ export const projects = [
       },
       {
         icon: IconKeys.tailwind,
+      },
+    ],
+  },
+  {
+    img: "../../../img/cyberpunk.webp",
+    title: "cyberpunk",
+    link: "https://preeminent-liger-266356.netlify.app/",
+    description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
+      el ususario puede ver los tailer de él juegos y también los
+      episodios de la serie....`,
+    technologies: [
+      {
+        icon: IconKeys.html,
+      },
+      {
+        icon: IconKeys.css,
+      },
+      {
+        icon: IconKeys.javaScript,
       },
     ],
   },
@@ -235,25 +231,6 @@ export const projects = [
       },
       {
         icon: IconKeys.tailwind,
-      },
-    ],
-  },
-  {
-    img: "../../../img/cyberpunk.webp",
-    title: "cyberpunk",
-    link: "https://preeminent-liger-266356.netlify.app/",
-    description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
-      el ususario puede ver los tailer de él juegos y también los
-      episodios de la serie....`,
-    technologies: [
-      {
-        icon: IconKeys.html,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
       },
     ],
   },
@@ -322,6 +299,29 @@ export const projects = [
       },
       {
         icon: IconKeys.tailwind,
+      },
+    ],
+  },
+  {
+    img: "../../../img/tasks-manager.webp",
+    title: "Tasks Manager",
+    link: "https://task-manager-ecru-chi.vercel.app/dashboard",
+    description: `Administrador de tareas con drag and drop autenticación con Clerk , shadcn.  "En Desarrollo "`,
+    technologies: [
+      {
+        icon: IconKeys.typeScript,
+      },
+      {
+        icon: IconKeys.nextjs,
+      },
+      {
+        icon: IconKeys.tailwind,
+      },
+      {
+        icon: IconKeys.zustand,
+      },
+      {
+        icon: IconKeys.shadcn,
       },
     ],
   },
